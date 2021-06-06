@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:textAlignment="center"
+        android:id="@+id/textView2"
+        android:layout_width="187dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="76dp"
+        android:text="@string/textfield1Str"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:onClick="startRecording"
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="@string/recStr"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:onClick="stopRecording"
+        android:id="@+id/button2"
+        android:layout_width="95dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/pauseStr"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:onClick="playRecording"
+        android:id="@+id/button3"
+        android:layout_width="95dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/playStr"
+        app:layout_constraintEnd_toEndOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="97dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="56dp"
+        android:text="@string/pitchSelectionStr"
+        app:layout_constraintEnd_toEndOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="133dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="36dp"
+        android:entries="@array/pitchSelectArray"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

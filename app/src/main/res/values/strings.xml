@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Bak Yak Rarpw V0.1 </string>
+    <string name="pitchSelectionStr">Select a pitch!</string>
+    <string name="textfield1Str">Bak Yak Rarpw V0.1</string>
+    <string name="recStr">Record</string>
+    <string name="pauseStr">Pause</string>
+    <string name="playStr">Play</string>
+    <string-array name="pitchSelectArray">
+        <item>Normal</item>
+        <item>High</item>
+        <item>Low</item>
+    </string-array>
+</resources>
